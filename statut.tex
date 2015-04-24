@@ -1,0 +1,273 @@
+\documentclass[11pt,oneside,final,wide]{mwart} 
+
+\usepackage[utf8]{inputenc} 
+\usepackage{polski} 
+\usepackage{iwona} 
+\usepackage{setspace} 
+\usepackage{enumitem} 
+
+\onehalfspacing
+
+\setlength{\parindent}{0pt} 
+\setlist{nolistsep}
+
+\setenumerate[2]{label=(\alph*)} 
+\setenumerate[3]{label=(\roman*)}
+
+\newcommand{\parno}[1]{\S~#1} 
+
+\newcounter{para}
+
+\newenvironment{para}{
+  \refstepcounter{para}
+  \par\medskip\pagebreak[3]
+	{
+  	\centering\textbf{\parno{\arabic{para}}}\par}
+  	\nopagebreak\smallskip
+  	\ignorespaces
+	}
+	
+	{
+  		\par
+	}
+
+\newenvironment{alphenumerate}
+	{
+		\begin{enumerate}[label=(\alph*)]
+  	}{
+  \end{enumerate}
+}
+
+\newcounter{rozdz}
+\newlength{\rozdzfil}
+\setlength{\rozdzfil}{6cm}
+
+\newcommand{\rozdz}[1]
+	{
+		\refstepcounter{rozdz}
+		\par
+  		\vskip 0pt plus \rozdzfil\penalty -200\vskip 0pt plus -\rozdzfil
+  		\bigskip
+  		{
+	  		\centering
+			\large\bfseries
+			Rozdział~\Roman{rozdz}\par\medskip 
+			#1
+			\par
+		}
+		\smallskip
+		\nopagebreak
+	}
+
+\begin{document}
+
+\begin{center}
+	\LARGE
+  Statut Fundacji „Hackerspace Kraków”
+\end{center}
+
+\rozdz{Postanowienia ogólne}
+
+\begin{para}
+  Fundacja nosi nazwę „Hackerspace Kraków” (zwana dalej Fundacją) i została ustanowiona aktem notarialnym z dnia 1 października 2012 roku, sporządzonym przez notariusza Edwarda Drozda w Kancelarii przy ul. Rotmistrza Zbigniewa Dunin-Wąsowicza 8/5 w Krakowie (Repozytorium A nr 5656/2012), z woli następujących fundatorów indywidualnych: 
+
+  \begin{itemize}
+    \item{{\addtolength{\leftskip}{5mm}Marii Magdaleny Skrzypek}}
+    \item{{\addtolength{\leftskip}{5mm}Mirosława Ireneusza Woźniaka}}
+  \end{itemize}
+  zwanych dalej fundatorami i działa na podstawie przepisów obowiązującej ustawy o fundacjach.
+\end{para}
+
+\begin{para}
+   Fundacja posiada osobowość prawną. 
+\end{para}
+
+\begin{para}
+  Fundacja ustanowiona zostaje na czas nieokreślony. 
+\end{para}
+
+\begin{para}
+  Fundacja działa na terytorium Rzeczypospolitej Polskiej i poza jej granicami zgodnie z prawem RP.
+\end{para}
+
+\begin{para}
+  Siedzibą Fundacji jest miasto Dobczyce. 
+\end{para}
+
+\begin{para}
+  Nadzór nad Fundacją sprawuje minister właściwy do spraw nauki.
+\end{para}
+
+\begin{para}
+  Nadzór nad Fundacją sprawuje minister właściwy do spraw nauki.
+\end{para}
+
+\begin{para}
+  Fundacja może ustanawiać certyfikaty, odznaki, medale honorowe i przyznawać je wraz z innymi nagrodami i wyróżnieniami, osobom fizycznym i prawnym zasłużonym dla fundacji, przyczyniającym się do realizacji celów fundacji.
+\end{para}
+    
+\rozdz{Cele i sposoby realizacji celów}
+
+\begin{para}
+  Celem findacji jest:
+  \begin{enumerate}
+  \item{Propagowanie zainteresowań technicznych i edukacja techniczna wśród wszystkich grup wiekowych.}
+  \item{Promocja i wspieranie przedsiębiorczości.}
+  \item{Promocja zatrudnienia i aktywizacja zawodowa uczniów, studentów i absolwentów, a także osób niezatrudnionych lub chcących się przekwalifikować.}
+  \item{Upowszechnianie kultury wolnego oprogramowania i wolnej wiedzy.}
+  \item{Skupianie pasjonatów różnych dziedzin technicznych chętnych do wspólnego poszerzania wiedzy oraz dzielenia się doświadczeniem.}
+  \item{Wspieranie rozwoju techniki, wynalazczości i innowacyjności oraz rozpowszechnianie i wdrażanie nowych rozwiązań technicznych.}
+  \item{Wspieranie i upowszechnianie kultury i sztuki.}
+  \item{ Promocja i organizacja wolontariatu, w tym również wolontariatu pracowniczego.}
+  \end{enumerate}
+\end{para}
+
+\begin{para}
+ Fundacja realizuje swoje cele poprzez: 
+ \begin{enumerate}
+ \item{Udostępnianie przestrzeni, środków i wiedzy do realizacji projektów i zainteresowań.}
+ \item{Organizację szkoleń, wykładów, konferencji, warsztatów i innych form edukacji służących poszerzaniu kompetencji i wiedzy dla wszystkich grup wiekowych.}
+ \item{ Wymianę doświadczeń. }
+ \item{ Współpracę z innymi instytucjami, organizacjami i osobami fizycznymi w zakresie realizacji celów fundacji. }
+ \item{ Działalność naukowo-badawczą. }
+ \item{ Organizację wizyt studyjnych i wyjazdów. }
+ \item{ Prowadzenie kampanii promocyjno-informacyjnych. }
+ \item{ Organizację wystaw, wernisaży, happeningów i innych form ekspresji artystycznej i kulturowej. }
+ \end{enumerate}
+\end{para}
+
+\rozdz{Majątek i dochody Fundacji}
+
+\begin{para}
+  Majątek Fundacji stanowi fundusz założycielski w kwocie 2100 zł (w tym 1000 zł przeznaczone na działalność gospodarczą) oraz inne mienie nabyte przez Fundację w toku działania. 
+\end{para}
+
+\begin{para}
+  Środki na realizację celów fundacji mogą pochodzić z: 
+ \begin{enumerate} 
+ \item{  dochodów z majątku ruchomego, nieruchomego i praw majątkowych, }
+ \item{ dochodów z działalności gospodarczej, }
+ \item{  darowizn, spadków, zapisów, }
+ \item{ otacji i subwencji osób prawnych, }
+ \item{ dochodów ze zbiórek publicznych, }
+ \item{ odsetek bankowych, }
+ \item{ wpływów z działalności statutowej. }
+ \end{enumerate}
+\end{para}
+
+\rozdz{Działalność gospodarcza}
+
+\begin{para}
+ \begin{enumerate}
+  \item{ Fundacja może prowadzić działalność gospodarczą bezpośrednio lub poprzez wyodrębnione organizacyjnie zakłady. }
+  \item{ Działalność gospodarcza może polegać na udziale w spółce handlowej lub cywilnej. }
+  \item{ Działalność gospodarcza Fundacji może być prowadzona wyłącznie w rozmiarach służących realizacji celów statutowych. }
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ Fundacja może prowadzić działalność gospodarczą w następującym zakresie: 
+ \begin{enumerate} 
+  \item{ Działalność związana z zarządzaniem urządzeniami informatycznymi (62.03.Z) }
+  \item{ Badania naukowe i prace rozwojowe w dziedzinie pozostałych nauk przyrodniczych i technicznych (72.19.Z) }
+  \item{ Działalność fotograficzna (74.20.Z) }
+  \item{ Wynajem i dzierżawa pozostałych maszyn, urządzeń oraz dóbr materialnych, gdzie indziej nie sklasyfikowane (77.39.Z) }
+  \item{ Wykonywanie fotokopii, przygotowywanie dokumentów i pozostała specjalistyczna działalność wspomagająca prowadzenie biura (82.19.Z) }
+  \item{ Działalność związana z organizacją targów, wystaw i kongresów (82.30.Z) }
+  \item{ Pozaszkolne formy edukacji artystycznej (85.52.Z) }
+  \item{ Pozostałe pozaszkolne formy edukacji, gdzie indziej niesklasyfikowane (85.59.B) }
+  \item{ Działalność wspomagająca edukację (85.60.Z) }
+  \item{ Artystyczna i literacka działalność twórcza (90.03.Z) }
+ \end{enumerate}
+\end{para}
+
+\rozdz{Władze fundacji}
+
+\begin{para}
+  Władzami fundacji są:
+  \begin{enumerate}
+  \item{ Zarząd Fundacji }
+  \item{ Rada fundacji }
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item{ Zarząd Fundacji ustanawiany jest na czas nieokreślony. Zarząd stanowią dwie do pięciu osób. Skład Zarządu Fundacji ustanawiany jest na mocy uchwały Rady Fundacji i podlega zatwierdzeniu przez fundatorów. }
+  \item{ Pierwszych członków Zarządu powołują fundatorzy. }
+  \item{ Następnych członków Zarządu na miejsce osób, które przestały pełnić tę funkcję lub dla rozszerzenia składu powołuje swą decyzją Rada, co podlega zatwierdzeniu przez fundatorów. }
+  \item{ W skład Zarządu mogą wchodzić fundatorzy. }
+  \item{ Członkostwo w Zarządzie wygasa na skutek śmierci, choroby powodującej trwałą niezdolność do sprawowania funkcji, utraty praw publicznych, zrzeczenia się członkostwa lub odwołania przez Radę Fundacji, co podlega zatwierdzeniu przez fundatorów. }
+  \item{ Zarząd podejmuje decyzje w formie uchwał, zwykłą większością głosów w obecności co najmniej połowy składu Zarządu. Chyba że dalsze postanowienia statutu stanowią inaczej. }
+  \item{ W sytuacji gdy Zarząd stanowią dwie osoby, decyzje podejmowane są jednomyślnie w obecności obu tych osób. }
+  \item{ Tryb działania Zarządu Fundacji określa uchwalony przez niego Regulamin. }
+  \item{ Do reprezentacji Fundacji upoważniony jest każdy członek Zarządu, natomiast do składania oświadczeń woli upoważnieni są dwaj członkowie Zarządu działający łącznie. }
+  \item{ Członkowie Zarządu mogą otrzymywać wynagrodzenie o ile Zarząd podejmie stosowną uchwałę o przyznawaniu i wysokości wynagrodzenia. }
+  \item{ Członkowie Zarządu mogą pozostawać z Fundacją w stosunku pracy. }
+  \item{ Do zakresu działania Zarządu Fundacji należy podejmowanie decyzji we wszystkich sprawach nie przekazanych do kompetencji innym organom lub jednostkom organizacyjnym a w szczególności:
+   \begin{enumerate}
+    \item{ kierowanie działalnością Fundacji }
+    \item{ sprawowanie zarządu nad majątkiem Fundacji }
+    \item{ reprezentowanie Fundacji na zewnątrz }
+    \item{ organizowanie i nadzorowanie działalności gospodarczej Fundacji }
+    \item{ tworzenie, likwidacja i nadzorowanie jednostek organizacyjnych oraz ustalanie zakresu ich działalności }
+    \item{ uchwalanie regulaminów }
+    \item{ przygotowywanie rocznych sprawozdań z działalności oraz sprawozdań finansowych }
+   \end{enumerate}
+  }
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item{ Rada składa się z co najmniej trzech osób powoływanych na czas nieokreślony.}
+  \item{ Pierwszych członków Rady powołują fundatorzy. }
+  \item{ Następnych członków Rady na miejsce osób, które przestały pełnić tę funkcję lub dla rozszerzenia składu powołuje swą decyzją Rada, co podlega zatwierdzeniu przez fundatorów. }
+  \item{ Członkostwo w Radzie wygasa, na skutek śmierci, choroby powodującej trwałą niezdolność do sprawowania funkcji, utraty praw publicznych, zrzeczenia się członkostwa lub odwołania decyzją Rady, co podlega zatwierdzeniu przez fundatorów. }
+  \item{ Rada w drodze uchwały podczas pierwszego posiedzenia wybiera ze swego grona przewodniczącego Rady. Przewodniczący Rady kieruje pracami Rady, reprezentuje ją na zewnątrz oraz zwołuje i przewodniczy zebraniom Rady. }
+  \item{ O posiedzeniu Rady muszą być powiadomieni wszyscy członkowie Rady. }
+  \item{ Tryb działania Rady Fundacji określa uchwalony przez nią regulamin. }
+  \item{ Rada podejmuje decyzje w formie uchwał zwykłą większością głosów w obecności co najmniej połowy składu Rady. }
+  \item{ Członkowie Rady Fundacji mogą pozostawać z Fundacją w stosunku pracy. }
+  \item{ Do zadań Rady Fundacji należy:
+   \begin{enumerate}
+    \item{ powoływanie i odwoływanie członków Zarządu Fundacji; }
+    \item{ powoływanie i odwoływanie członków Rady Fundacji; }
+    \item{ Opiniowanie decyzji i działań Zarządu. }
+   \end{enumerate}
+   }
+ \end{enumerate}
+\end{para}
+
+\rozdz{Zmiana statutu}
+
+\begin{para}
+ \begin{enumerate}
+  \item{ Zmiana statutu może nastąpić na drodze uchwały Zarządu Fundacji. }
+  \item{ Uchwały dotyczące zmian statutu podejmowane są w obecności wszystkich członków Zarządu zwykłą większością głosów. }
+  \item{ Zmiana statutu wymaga opinii Rady Fundacji i zatwierdzenia przez fundatorów. }
+  \item{ Zmiana statutu może dotyczyć wszystkich zapisów umieszczonych w statucie. }
+  \item{ Zmiana statutu może obejmować powoływanie nowych organów Fundacji oraz zmianę celu działalności Fundacji. }
+ \end{enumerate}
+\end{para}
+
+\rozdz{Postanowienia końcowe}
+
+\begin{para}
+ \begin{enumerate}
+  \item{ O likwidacji Fundacji na skutek zrealizowania jej celów lub wyczerpania środków decyduje Zarząd Fundacji. }
+  \item{ Uchwała dotycząca likwidacji Fundacji podejmowana jest w obecności wszystkich członków Zarządu zwykłą większością głosów. }
+  \item{ Likwidacja Fundacji wymaga opinii Rady Fundacji i zatwierdzenia przez fundatorów. }
+  \item{ Jeżeli Zarząd Fundacji w uchwale, o rozwiązaniu Fundacji, nie powoła likwidatorów, likwidację Fundacji przeprowadza Zarząd. }
+  \item{ Majątek pozostały po likwidacji Fundacji zostanie przekazany na cele pożytku publicznego, wskazanym przez Radę organizacjom pozarządowym działającym na terytorium Rzeczpospolitej Polskiej, których cele statutowe zbliżone są do celów Fundacji. }
+ \end{enumerate}
+\end{para}
+
+\begin{para}
+ \begin{enumerate}
+  \item{ Fundacja może się połączyć z inną fundacją dla efektywnego realizowania swoich celów. }
+  \item{ Połączenie z inną fundacją nie może nastąpić, jeżeli w jego wyniku mógłby ulec istotnej zmianie cel Fundacji. }
+ \end{enumerate}
+\end{para}
+
+\end{document}
