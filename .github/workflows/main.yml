@@ -1,10 +1,5 @@
-- name: LaTeX Action
-  # You may pin to the exact commit or the version.
-  # uses: fudan-mse/latex-action@eb2eb7ba472011213ac0a6286fd776494623362c
-  uses: fudan-mse/latex-action@v0.0.1
+- uses: xu-cheng/latex-action@v2
   with:
-    # The root LaTeX file to be compiled
     root_file: statut.tex
-    # The working directory for the LaTeX engine
     extra_packages: fixfoot
     extra_system_packages: texlive-lang-polish
