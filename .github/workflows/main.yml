@@ -1,5 +1,19 @@
-- uses: xu-cheng/latex-action@v2
-  with:
-    root_file: statut.tex
-    extra_packages: fixfoot
-    extra_system_packages: texlive-lang-polish
+name: Build Statut
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: statut.tex
+          extra_packages: fixfoot
+          extra_system_packages: texlive-lang-polish
+      - name: Save artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Statut
+          path: statut.pdf
