@@ -1,7 +1,0 @@
-branches:
-  only:
-    - master
-before_script:
-  - sudo apt-get install -y texlive texlive-lang-polish texlive-fonts-extra texlive-latex-extra
-script:
-  - pdflatex -halt-on-error statut.tex 
