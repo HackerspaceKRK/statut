@@ -1,6 +1,7 @@
 statut.aux
 statut.dvi
 statut.log
+*.log
 statut.fdb_latexmk
 status.fls
 statut.pdf
